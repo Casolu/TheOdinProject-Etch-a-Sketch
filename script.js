@@ -18,6 +18,14 @@ const renderGrid = (gridSize) => {
 };
     
 btnReset.addEventListener("click", () => {
+    restart();    
+});
+
+const removeHover = (e) => {
+    e.classList.remove("hover");
+};
+
+const restart = () => {
     grid.forEach(removeHover);
     gridSize = window.prompt("Enter Gridsize:", "max. 100");
     gridSize = parseInt(gridSize);
@@ -29,12 +37,8 @@ btnReset.addEventListener("click", () => {
     } else {
         window.alert("ERROR, only enter Number and Nuber max. 100!");
     };
-});
-
-const removeHover = (e) => {
-    e.classList.remove("hover");
 };
-
+    
 renderGrid(10);
 
 
