@@ -1,0 +1,34 @@
+
+
+
+body {
+    background-color: grey;
+    /* height: 1080px; */
+}
+
+/* button {
+    margin: 16px;
+} */ 
+
+#container {
+    display: flex;
+    background-color: black;
+    gap: 1px;
+    padding: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 8px;
+    height: 800px;
+    width: 800px;
+}
+
+.grid {
+    height: auto;
+    background-color: grey;
+    /* flex: 0 0 calc(25% - 3px); */
+    border: 10px white;
+}
+
+.hover {
+    background-color: rgb(39, 39, 39);
+}
